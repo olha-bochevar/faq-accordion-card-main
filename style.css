@@ -128,38 +128,54 @@
   .faq-container {
     width: 70%;
     background-color: #fff;
-    padding: 5em;
+    min-height: 465px;
     display: flex;
     justify-content: space-between;
     border-radius: 25px;
 }
 .image-content {
-    flex: 0 1 45%;
+    flex: 1 1 45%;
+    margin-right: 2em;
     position: relative;
 }
 
-.image-content > .img > img {
-    width: 100%;
-}
+ 
 .pattern,
 .box,
 .woman {
 position: absolute;
 }
 
- .pattern {
-   
+.pattern {
+  width: 400px;
+  height: auto;
+  overflow: hidden;
+}
+.pattern img {
+  width: 965px;
+  margin: -298px 0 0 -569px;
 }
 .box {
+  top: 183px;
+  left: -133px;
+    z-index: 999;
     
 }
+
 .woman {
-    
+  width: 400px;
+  height: auto;
+  overflow: hidden;
 }  
+.woman img {
+  width: 472px;
+  margin: 52px 0 0 -74px;
+}
 /*---------------------------------------------------------*/
 .faq-content {
-    flex: 0 1 45%;
-    margin: 0 5em;
+  padding: 5em;
+    flex: 1 1 50%;
+    margin-right: 0 3em;
 }
 .faq-content h2 {
     text-transform: uppercase;
