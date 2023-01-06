@@ -159,7 +159,7 @@ position: absolute;
 /*---------------------------------------------------------*/
 .faq-content {
     flex: 0 1 45%;
-    margin-right: 5em;
+    margin: 0 5em;
 }
 .faq-content h2 {
     text-transform: uppercase;
@@ -178,15 +178,26 @@ position: absolute;
     justify-content: space-between;
     cursor: pointer;
 }
+.question:hover{
+  color: var(--soft-red);
+}
+.question.active{
+  font-weight: 700;
+}
+.question.active:hover {
+  color: var(--dark-grayish-blue);
+}
 .question::after {
     content: url(images/icon-arrow-down.svg);
     display: inline-block;
     margin-left: 0.5em;
+    transition: transform 0.3s ease-in;
 }
 .question.active::after{
-    transform: rotate(180deg);
+    transform: rotate(-180deg);
+    transition: transform 0.3s ease-in;
 }
-.question-text.active {
+/* .question-text.active {
     font-weight: 700;
 }
 
@@ -195,7 +206,7 @@ position: absolute;
 }
 .question-text.active:hover {
     color: var(--dark-grayish-blue);
-}
+} */
 
 
 .answer {
